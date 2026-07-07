@@ -1,0 +1,31 @@
+[package]
+name = "egui-keyfunnel"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.92"
+authors = ["Sylvain Gargasson <sylvain.gargasson@gmail.com>"]
+description = "Funnel keyboard input to a single egui viewport — an egui Plugin for multi-viewport kiosk/cabinet apps where secondary windows must not capture the keyboard."
+keywords = ["egui", "keyboard", "viewport", "kiosk", "input"]
+categories = ["gui"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Le-Syl21/egui-keyfunnel"
+readme = "README.md"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+# Pinned to the 0.35 minor: egui 0.35 gave `Plugin::input_hook` a `&Context`
+# parameter, so one code base cannot span 0.34 and 0.35.
+egui = { version = ">=0.35, <0.36", default-features = false }
+
+[dev-dependencies]
+egui = ">=0.35, <0.36"
+eframe = { version = ">=0.35, <0.36", default-features = false, features = [
+    "glow",
+    "wayland",
+    "x11",
+] }
+
+[[example]]
+name = "funnel_demo"
