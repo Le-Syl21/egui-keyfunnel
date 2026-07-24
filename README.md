@@ -2,12 +2,19 @@
 
 [![crates.io](https://img.shields.io/crates/v/egui-keyfunnel.svg)](https://crates.io/crates/egui-keyfunnel)
 [![docs.rs](https://docs.rs/egui-keyfunnel/badge.svg)](https://docs.rs/egui-keyfunnel)
+[![Discord](https://img.shields.io/badge/Discord-Le--Syl21%20Tools-5865F2?logo=discord&logoColor=white)](https://discord.gg/T37DYHmt2j)
 
 **Funnel keyboard input to a single [egui](https://github.com/emilk/egui) viewport.**
 
 An `egui::Plugin` for multi-viewport apps — kiosks, pinball cabinets, digital
 signage — where a **main** window shares the screen with **secondary** windows
 (backglass, DMD, topper, status displays) that must never steal the keyboard.
+
+## Community & support
+
+Questions, bug reports, beta testing, or just want to chat? Join the Discord:
+
+[![Discord](https://img.shields.io/badge/Discord-Le--Syl21%20Tools-5865F2?logo=discord&logoColor=white)](https://discord.gg/T37DYHmt2j)
 
 ## The problem
 

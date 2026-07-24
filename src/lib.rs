@@ -26,6 +26,10 @@
 //! with that window). Gamepad / joystick input read outside egui (e.g. via SDL)
 //! is unaffected either way.
 //!
+//! # Community & support
+//!
+//! Questions, bugs, beta testing — join the Discord: <https://discord.gg/T37DYHmt2j>
+//!
 //! [`ViewportBuilder::with_active(false)`]: egui::ViewportBuilder::with_active
 
 use std::collections::HashSet;
