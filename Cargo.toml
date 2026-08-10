@@ -1,6 +1,6 @@
 [package]
 name = "egui-keyfunnel"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 rust-version = "1.92"
 authors = ["Sylvain Gargasson <sylvain.gargasson@gmail.com>"]
@@ -15,13 +15,13 @@ readme = "README.md"
 all-features = true
 
 [dependencies]
-# Pinned to the 0.35 minor: egui 0.35 gave `Plugin::input_hook` a `&Context`
-# parameter, so one code base cannot span 0.34 and 0.35.
-egui = { version = ">=0.35, <0.36", default-features = false }
+# Pinned to one egui minor: `Plugin::input_hook`'s signature moves between
+# them, so a single code base cannot span two.
+egui = { version = ">=0.36, <0.37", default-features = false }
 
 [dev-dependencies]
-egui = ">=0.35, <0.36"
-eframe = { version = ">=0.35, <0.36", default-features = false, features = [
+egui = ">=0.36, <0.37"
+eframe = { version = ">=0.36, <0.37", default-features = false, features = [
     "glow",
     "wayland",
     "x11",
