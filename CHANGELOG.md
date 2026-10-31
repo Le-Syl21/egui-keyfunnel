@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-31
+
+### Changed
+- egui 0.37 (`>=0.37, <0.38`). The API is unchanged.
+
+## [0.2.0] - 2026-08-06
+
+### Changed
+- egui 0.36 (`>=0.36, <0.37`). The API is unchanged.
+
 ## [0.1.1] - 2026-07-24
 
 ### Added
